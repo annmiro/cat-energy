@@ -206,7 +206,12 @@ $input-icon-gap: 45px;
 }
 
 .form__icon {
-  stroke: #222222;
+  fill: #222222;
+
+  &--mail {
+    stroke: #222222;
+    fill: none;
+  }
 }
 
 @media #{$tablet-width} {
@@ -463,7 +468,12 @@ $input-icon-gap: 45px;
       +.form__icon-wrapper {
 
         .form__icon {
-          stroke: $basic-green;
+          fill: $basic-green;
+
+          &--mail {
+            stroke: $basic-green;
+            fill: none;
+          }
         }
       }
     }

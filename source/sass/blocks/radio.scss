@@ -45,6 +45,7 @@ $radio-bullet-tablet-size: 18px;
     &::before,
     &::after {
       opacity: 30%;
+      cursor: not-allowed;
     }
   }
 }
