@@ -60,6 +60,18 @@
   margin-right: 15px;
 }
 
+.sub-promo__icon-wrapper {
+  display: block;
+  width: 32px;
+  overflow: hidden;
+}
+
+.sub-promo__link-arrow {
+  position: relative;
+  transform: translateX(-8px);
+  transition: transform 0.2s ease-in-out;
+}
+
 @media #{$tablet-width} {
   .sub-promo {
     margin-bottom: 45px;
@@ -141,6 +153,14 @@
   .sub-promo__item {
     &:not(:last-child) {
       margin-right: 80px;
+    }
+  }
+
+  .sub-promo__link {
+    &:hover {
+      .sub-promo__link-arrow {
+        transform: translateX(0);
+      }
     }
   }
 

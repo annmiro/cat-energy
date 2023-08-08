@@ -40,5 +40,13 @@
     &--current-index {
       border-bottom-color: $color-white;
     }
+
+    &:hover {
+      opacity: 60%;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
   }
 }

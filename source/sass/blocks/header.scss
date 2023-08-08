@@ -129,6 +129,7 @@
     top: 50%;
     transform: rotate(45deg);
   }
+
   &::after {
     top: 50%;
     transform: rotate(-45deg);
@@ -188,6 +189,16 @@
 
     &--secondary {
       color: $color-white;
+    }
+  }
+
+  .header__logo-link {
+    &:hover {
+      opacity: 80%;
+    }
+
+    &:active {
+      opacity: 60%;
     }
   }
 

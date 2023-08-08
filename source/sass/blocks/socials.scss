@@ -14,10 +14,39 @@
   margin-right: 40px;
 }
 
+.socials__icon {
+  fill: #666666;
+
+  &--fb {
+    stroke: #666666;
+    fill: none;
+  }
+}
+
 @media #{$tablet-width} {
   .socials {
     border-bottom: none;
     padding-top: 0;
     padding-bottom: 0;
+  }
+}
+
+@media #{$desktop-width} {
+  .socials__link {
+
+    &:hover {
+      .socials__icon {
+        fill: $basic-green;
+        &--fb {
+          stroke: $basic-green;
+        }
+      }
+    }
+
+    &:active {
+      .socials__icon {
+        opacity: 30%;
+      }
+    }
   }
 }

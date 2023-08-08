@@ -16,7 +16,6 @@
     "gulp-posthtml": "^3.0.5",
     "gulp-rename": "^2.0.0",
     "imagemin-mozjpeg": "^10.0.0",
-    "imagemin-svgo": "^10.0.1",
     "postcss": "8.3.11",
     "posthtml-include": "^1.7.4",
     "run-sequence": "^2.2.1",

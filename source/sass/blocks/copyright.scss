@@ -17,3 +17,11 @@
     margin-right: 22px;
   }
 }
+
+@media #{$desktop-width } {
+  .copyright__link {
+    &:hover {
+      opacity: 30%;
+    }
+  }
+}

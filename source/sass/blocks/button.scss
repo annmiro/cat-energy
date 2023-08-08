@@ -18,8 +18,31 @@
   overflow: hidden;
   max-width: 100%;
 
+
   &--secondary {
     background-color: $basic-grey;
     color: $dark-grey;
+  }
+}
+
+@media #{$desktop-width} {
+  .button {
+    &:hover {
+      background-color: $special-green;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3)
+    }
+
+    &--secondary {
+      &:hover {
+        background-color: $light-grey-6;
+      }
+
+      &:active {
+        color: rgb(68 68 68 / 0.3);
+      }
+    }
   }
 }

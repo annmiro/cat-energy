@@ -33,9 +33,22 @@ $radio-bullet-tablet-size: 18px;
   }
 }
 
-.input-radio:checked+.radio::after {
-  content: "";
+.input-radio {
+  &:checked+.radio {
+    &::after {
+      content: "";
+    }
+  }
+
+  &:disabled+.radio {
+
+    &::before,
+    &::after {
+      opacity: 30%;
+    }
+  }
 }
+
 
 @media #{$tablet-width} {
   .radio {
@@ -52,6 +65,16 @@ $radio-bullet-tablet-size: 18px;
       height: $radio-bullet-tablet-size;
       top: calc((($input-label-height-2 - $radio-tablet-size) / 2) + ($radio-tablet-size / 2));
       left: calc($radio-tablet-size / 2);
+    }
+  }
+}
+
+@media #{$desktop-width} {
+  .radio {
+    &:hover {
+      &::before {
+        border-color: $light-grey-7;
+      }
     }
   }
 }

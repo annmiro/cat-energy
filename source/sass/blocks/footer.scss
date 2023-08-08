@@ -33,4 +33,14 @@
   .footer__content {
     padding: 60px 110px;
   }
+
+  .footer__logo-link {
+    &:hover {
+      opacity: 80%;
+    }
+
+    &:active {
+      opacity: 60%;
+    }
+  }
 }
